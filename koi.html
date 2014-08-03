@@ -14,11 +14,11 @@
   <!--Normalize 3.0.0 CSS-->
   <style type="text/css">
     body {
-      width: 780px;
+      width: 830px;
       padding-top: 20px;
       margin-left: 15%;
       margin-right: auto;
-      background-color: white;
+      background-color: #fff;
       font-family: 'Raleway';
     }
 
@@ -26,7 +26,6 @@
 
     #header {
       float:left;
-      background-color: #fff;
       width: 180px;
       border-right: 4px solid #FF4242;
       padding: 2%;
@@ -39,8 +38,6 @@
     }
 
     #logo {
-      margin: auto;
-      text-decoration: none;
       margin-bottom: 5px;
     }
 
@@ -57,9 +54,8 @@
 
     li {
       list-style: none;
-      text-decoration: none;
-      font-size: 0.8em;
       font-weight: 200;
+      margin-left: -40px;
     }
 
     input[type=text] {
@@ -67,7 +63,6 @@
       text-align: center;
       width: 100px;
       border-bottom: 1px solid rgb(160,160,160);
-      margin-bottom: 5px;
     }
 
     input[type=text]:focus {
@@ -75,23 +70,21 @@
     }
 
     input[type=submit] {
+      outline: none;
       border-radius: 2px;
-      margin-left: 0px auto;
       border: none;
     }
 
     input[type=submit]:focus {
-      outline: none;
       background: #fff;
       color: rgb(160,160,160);
       border: 2px solid rgb(160,160,160);
     }
 
-
 /*    Posts */
 
     .content {
-      width: 500px;
+      width: 550px;
       margin-right: 0;
       margin-left: auto;
     }
@@ -117,10 +110,10 @@
 
     a {
       color: inherit;
+      font-size: 0.8em;
     }
 
     .permalink {
-      font-size: 0.8em;
       font-weight: 200;
     }
 
@@ -132,7 +125,6 @@
     }
 
     .pagination {
-      font-size: 0.8em;
     }
 
     /*Tumblr inherited */
@@ -257,9 +249,9 @@
       {/block:Date}
 <!--      {lang:Permalink}-->
       </a></p>{/block:IndexPage}
+      <div class="hr"></div>
     </article>
     </div>
-    <div class="hr"></div>
     {/block:Posts}
 
     {block:PermalinkPagination}
