@@ -1,4 +1,0 @@
-koi
-===
-
-Simple Tumblr theme
