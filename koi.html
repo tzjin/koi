@@ -130,6 +130,17 @@
     .pagination {
     }
 
+    .content .notecontainer ol.notes li {
+      list-style: none;
+      font-size: 1em;
+
+    }
+    .content .notecontainer img.avatar {
+      width:16px;
+      height: auto;
+    }
+
+
     /*Tumblr inherited */
     iframe#tumblr_controls {}
     .search_query {}
@@ -255,6 +266,9 @@
       <div class="hr"></div>
     </article>
     </div>
+    {block:PostNotes}
+      <div class="notecontainer">{PostNotes}</div>
+    {/block:PostNotes}
     {/block:Posts}
 
     {block:PermalinkPagination}
