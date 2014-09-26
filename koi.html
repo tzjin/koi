@@ -111,6 +111,12 @@
       width: 400px;
     }
 
+    .hrd {
+      border-bottom: 1px dashed rgb(100,100,100);
+      margin: 35px auto;
+      width: 400px;
+    }
+
     a {
       color: inherit;
       font-size: 0.8em;
@@ -142,6 +148,18 @@
 
     blockquote {
       margin: 15px;
+    }
+
+    .notes {
+      font-size:0.8em;
+    }
+
+    .notes img {
+      margin: auto 4px;
+    }
+
+    .notes a {
+      font-size: 1em;
     }
 
     /*Tumblr inherited */
@@ -252,9 +270,10 @@
       {/block:Chat}
       {block:Answer}
       <div class="answer">
-        <img src="{AskerPortraitURL-40}">
-        {Asker}
-        {Question}
+<!--        <img src="{AskerPortraitURL-40}">-->
+        {Asker}:
+        <blockquote>{Question}</blockquote>
+        <div class="hrd"></div>
         {Answer}
       </div>
       {/block:Answer}
