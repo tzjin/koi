@@ -135,7 +135,11 @@
 
     .pagination {
     }
-
+    
+    .notecontainer {
+      display: none;
+    }
+    
     .content .notecontainer ol.notes li {
       list-style: none;
       font-size: 1em;
@@ -277,15 +281,14 @@
       {/block:Answer}
       {block:IndexPage}
       <p><a href="{Permalink}" class="permalink">
-      {block:Date}
-      {block:NewDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:NewDayDate}
-      {block:SameDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:SameDayDate}
-      {/block:Date}
+      View Post
+
 <!--      {lang:Permalink}-->
       </a></p>{/block:IndexPage}
       <div class="hr"></div>
     </article>
     </div>
+    
     {block:PostNotes}
       <div class="notecontainer">{PostNotes}</div>
     {/block:PostNotes}
